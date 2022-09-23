@@ -1,7 +1,9 @@
 <?php
     require_once __DIR__ . '/Classes/Customer.php';
     require_once __DIR__ . '/Classes/Employee.php';
-    
+    require_once __DIR__ . '/Classes/OnSaleProperty.php';
+    require_once __DIR__ . '/Classes/OnRentProperty.php';
+
     //***CLIENTE***
     $customer = new Customer("Mario Rossi", "mariorossi@gmail.com");
 
@@ -37,8 +39,23 @@
         echo "Livello di accesso: " . $e->getMessage() . "<br>";
     }
 
-    //*stampa delle informazioni
-    echo "<br><br>";
+    //*stampa delle informazioni Utenti
+    echo "<h1>UTENTI</h1>";
     $customer->getUserInfo();
     echo "<br><br>";
     $employee->getUserInfo();
+
+
+    //*** IMMOBILI ***/
+
+    $onSaleProperty = new OnSaleProperty("Via Giuseppe Mazzini", 200, 5, 3, 200000);
+
+    $onRentProperty = new OnRentProperty("Via Cadamosto", 100, 2, 1, 500);
+
+    //*stampa delle informazioni Immobili
+    echo "<h1>IMMOBILI</h1>";
+    $onSaleProperty->getPropertyInfo();
+    $onSaleProperty->getPrice();
+    echo "<br><br>";
+    $onRentProperty->getPropertyInfo();
+    $onRentProperty->getRent();
