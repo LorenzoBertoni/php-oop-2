@@ -4,9 +4,9 @@
     class OnSaleProperty extends Property {
         public $price;
 
-        public function __construct($address, $mq, $n_of_rooms, $n_of_bathrooms, $price)
+        public function __construct($address, $civicNumber, $mq, $n_of_rooms, $n_of_bathrooms, $price)
         {
-            parent::__construct($address, $mq, $n_of_rooms, $n_of_bathrooms);
+            parent::__construct($address, $civicNumber, $mq, $n_of_rooms, $n_of_bathrooms);
 
             $this->price = $price;
         }

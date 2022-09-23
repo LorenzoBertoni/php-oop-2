@@ -5,7 +5,7 @@
     require_once __DIR__ . '/Classes/OnRentProperty.php';
 
     //***CLIENTE***
-    $customer = new Customer("Mario Rossi", "mariorossi@gmail.com");
+    $customer = new Customer("Mario Rossi", "mariorossi@gmail.com", "Corso Roma", 10);
 
     //*eccezione sollevata in caso di password poco sicura
     try {
@@ -22,7 +22,7 @@
     }
 
     //***DIPENDENTE***
-    $employee = new Employee("Luca Bianchi", "lucabianchi@gmail.com");
+    $employee = new Employee("Luca Bianchi", "lucabianchi@gmail.com", "Via Paolo Sarpi", 47);
 
     //*eccezione sollevata in caso di password poco sicura
     try {
@@ -48,9 +48,9 @@
 
     //*** IMMOBILI ***/
 
-    $onSaleProperty = new OnSaleProperty("Via Giuseppe Mazzini", 200, 5, 3, 200000);
+    $onSaleProperty = new OnSaleProperty("Via Giuseppe Mazzini", 38, 200, 5, 3, 200000);
 
-    $onRentProperty = new OnRentProperty("Via Cadamosto", 100, 2, 1, 500);
+    $onRentProperty = new OnRentProperty("Via Cadamosto", 40, 100, 2, 1, 500);
 
     //*stampa delle informazioni Immobili
     echo "<h1>IMMOBILI</h1>";
