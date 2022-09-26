@@ -7,7 +7,6 @@
         public function __construct($address, $civicNumber, $mq, $n_of_rooms, $n_of_bathrooms, $rent)
         {
             parent::__construct($address, $civicNumber, $mq, $n_of_rooms, $n_of_bathrooms);
-
             $this->rent = $rent;
         }
 

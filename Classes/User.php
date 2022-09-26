@@ -7,7 +7,7 @@
         protected $password;
         protected $level;
         
-        public function __construct($nickName, $email, $address = null, $civicNumber)
+        public function __construct($nickName, $email, $address = null, $civicNumber = null)
         {
             $this->nickName = $nickName;
             $this->email = $email;
